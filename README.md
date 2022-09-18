@@ -1,4 +1,4 @@
-# TUGAS PEMROGRAMAN WEBS
+# TUGAS PEMROGRAMAN WEB
 
 ## Nama     : Anggito Anju Hartawan Manalu
 ## NRP      : 5025201216

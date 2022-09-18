@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nanum+Gothic&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+body {
+    height: 100vh;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: saturate(120%) brightness(120%);
+}
+
+header {
+    width: 100vw;
+    height: 25vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+h1 {
+    width: 70vw;
+
+    color: #342b26;
+    font-size: 3vw;
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: .5rem;
+    text-align: center;
+
+    background: linear-gradient(90deg, rgba(240,248,255,0.6) 0%, rgba(255,255,255,0.4) 100%);
+
+    border-radius: 20px;
+}
+
+label {
+    margin-bottom: .7rem;
+
+    font-size: 1.75vw;
+    font-weight: bold;
+    letter-spacing: .125rem;
+}
+
+input {
+    width: 100%;
+    height: 2rem;
+
+    border-radius: 1rem;
+    border: none;
+
+    padding: 1.2rem;
+}
+
+.form-container {
+    padding: 1rem 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 2rem;
+    background: linear-gradient(90deg, rgba(240,248,255,0.4) 0%, rgba(255,255,255,0.2) 100%);
+}
+
+.content-container {
+    width: 50vw;
+
+    padding: 1.125rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#result-container {
+    padding: 1em 2em;
+    flex-wrap: wrap;
+}
+
+.data-container {
+    width: 35vw;
+    margin: 2em;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    letter-spacing: .125rem;
+    border-radius: 2rem;
+
+    background: linear-gradient(90deg, rgb(134, 199, 255, 1) 0%, rgba(255,255,255,0.5) 100%);
+}
+
+.data-upper {
+    width: 100%;
+
+    margin-bottom: 1rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.data-kodepos {
+    padding: 0 1rem;
+    height: 2rem;
+}
+
+.data-provinsi {
+    padding: 0 1rem;
+    height: 2rem;
+}
+
+.data-lower {
+    margin-top: 1rem;
+}
+
+.info-radius {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: aliceblue;
+    background-color: cadetblue;
+
+    border-radius: 2rem;
+}
+
+.not-found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: bold;
+}
+
+#search-button {
+    width: 80%;
+    height: 2rem;
+
+    border: none;
+    border-radius: 2rem;
+
+    color: aliceblue;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: .15rem;
+
+    background: #2f5da6;
+
+    transition: ease-out 0.4s;
+}
+
+#search-button:hover {
+    cursor: pointer;
+    color: #342b26;
+    background-color: rgb(168, 204, 235);
+}
+
+#search-button:active {
+    transform: translateX(3px) translateY(3px);
+}
+
+@media only screen and (max-width: 855px) {
+    h1 {
+        width: 90vw;
+        font-size: 5vw;
+    }
+
+    label {
+        font-size: 3.75vw;
+    }
+
+    .form-container {
+        width: 70vw;
+    }
+
+    input {
+        padding: 0.8rem;
+    }
+
+    #search-button {
+        width: 60%;
+    }
+
+    .data-container {
+        width: 100%;
+        font-size: .75rem;
+    }
+}

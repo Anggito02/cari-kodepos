@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Postal Code</title>
+</head>
+<body id="body">
+    <header>
+        <h1>INDONESIAN POSTAL CODE FINDER</h1>
+    </header>
+    <div class="content">
+        <div class="form-container">
+            <div class="content-container">
+                <label for="search_province">Provinsi</label>
+                <input type="text" name="province" id="search-province" placeholder="Masukkan nama provinsi">
+            </div>
+            <div class="content-container">
+                <label for="search_city">Kota</label>
+                <input type="text" name="city" id="search-city" placeholder="Masukkan nama kota">
+            </div>
+            <div class="content-container">
+                <label for="search_district">Kecamatan</label>
+                <input type="text" name="district" id="search-district" placeholder="Masukkan nama kecamatan">
+            </div>
+            <div class="content-container">
+                <label for="search_subdistrict">Kelurahan</label>
+                <input type="text" name="subdistrict" id="search-subdistrict" placeholder="Masukkan nama kelurahan">
+            </div>
+            <button id="search-button">CARI</button>
+        </div>
+        <section id="result-container">
+        </section>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

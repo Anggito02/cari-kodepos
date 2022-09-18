@@ -152,6 +152,7 @@ input {
     align-items: center;
 
     font-weight: bold;
+    text-align: center;
 }
 
 #search-button {
@@ -192,7 +193,12 @@ input {
     }
 
     .form-container {
-        width: 70vw;
+        width: 80vw;
+    }
+
+    .content-container {
+        width: 80%;
+        padding: .7rem;
     }
 
     input {

@@ -91,7 +91,9 @@ input {
 
 #result-container {
     padding: 1em 2em;
-    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .data-container {
@@ -203,7 +205,7 @@ input {
     }
 
     .data-container {
-        width: 100%;
+        width: 60vw;
         font-size: .75rem;
     }
 }

@@ -90,7 +90,6 @@ input {
 }
 
 #result-container {
-    padding: 1em 2em;
     display: flex;
     justify-content: center;
     align-items: center;

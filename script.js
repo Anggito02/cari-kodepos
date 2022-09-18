@@ -70,6 +70,8 @@ $('#search-button').on('click', function() {
             }
 
             $('#result-container').html(searchResult)
+
+            document.getElementById('result-container').style.padding = "1em 2em";
         },
         error: () => console.log('Error')
     })
@@ -83,3 +85,5 @@ function randomizeBackground() {
 }
 
 randomizeBackground()
+
+/* ===== Randomize Background ===== */

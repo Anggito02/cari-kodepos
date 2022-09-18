@@ -28,10 +28,10 @@ $('#search-button').on('click', function() {
                         if(o_province[i].city === i_cityName) {
                             cityFound = true;
                             
-                            if(o_province[i].urban === i_district) {
+                            if(o_province[i].sub_district === i_district) {
                                 districtFound = true;
 
-                                if(o_province[i].sub_district === i_subdistrict) {
+                                if(o_province[i].urban === i_subdistrict) {
                                     subdistrictFound = true;
                                     break;
                                 }
@@ -43,12 +43,12 @@ $('#search-button').on('click', function() {
                         searchResult += `
                             <div class="data-container">
                                 <div class="data-upper">
-                                    <h3 class="data-kelurahan">${o_province[i].sub_district}</h3>
+                                    <h3 class="data-kelurahan">${o_province[i].urban}</h3>
                                     <h3 class="data-kodepos info-radius">${o_province[i].postal_code}</h3>
                                 </div>
                                 <div class="data-inner">
                                     <p>Kota: ${o_province[i].city}</p>
-                                    <p>Kecamatan: ${o_province[i].urban}</p>
+                                    <p>Kecamatan: ${o_province[i].sub_district}</p>
                                 </div>
                                 <div class="data-lower">
                                     <h4 class="data-provinsi info-radius">${i_provinceName}</h4>
